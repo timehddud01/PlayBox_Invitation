@@ -212,6 +212,13 @@ img[src$=".svg"] {
 
 body {
   overscroll-behavior-y: contain;
+  overflow-y: scroll;
+  scrollbar-width: none;          
+  -ms-overflow-style: none;       
+}
+
+body::-webkit-scrollbar {
+  display: none;                  
 }
 
 img[src$=".svg"] {
@@ -219,4 +226,9 @@ img[src$=".svg"] {
   image-rendering: crisp-edges;
   shape-rendering: geometricPrecision;
   object-fit: unset;
+}
+
+.parallax {
+  will-change: transform;
+  transform: translateZ(0);
 }
