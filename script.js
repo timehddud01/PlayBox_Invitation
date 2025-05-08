@@ -1,13 +1,11 @@
-const intensity = 0.15;       
-const maxTranslate = 60;      
-
 let ticking = false;
 
 function handleScroll() {
   const scrollY = window.scrollY;
 
   document.querySelectorAll(".parallax").forEach(el => {
-    const translateY = Math.min(scrollY * intensity, maxTranslate);
+    const speed = parseFloat(el.dataset.speed) || 0.15;
+    const translateY = scrollY * speed;
     el.style.transform = `translateY(${translateY}px)`;
   });
 
@@ -21,4 +19,4 @@ window.addEventListener("scroll", () => {
   }
 });
 
-handleScroll(); 
+handleScroll();
