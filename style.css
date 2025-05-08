@@ -41,20 +41,18 @@ a {
   display: none;                 
 }
 
+.overlap-wrapper {
+  background-color: #060807;
+  max-width: 402px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
 .overlap {
   position: relative;
   min-height: 120dvh;
-
-
-  overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
-
-.overlap::-webkit-scrollbar {
-  display: none;
-}
-
 .overlap-group {
   position: absolute;
   width: 390px;

@@ -1,12 +1,7 @@
-const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-const isKakao = navigator.userAgent.includes("KAKAOTALK");
-
-
-const intensity = isKakao ? 0.02 : (isMobile ? 0.08 : 0.2);
-const maxTranslate = isKakao ? 20 : 40;
+const intensity = 0.15;       
+const maxTranslate = 60;      
 
 let ticking = false;
-
 
 function handleScroll() {
   const scrollY = window.scrollY;
@@ -19,7 +14,6 @@ function handleScroll() {
   ticking = false;
 }
 
-
 window.addEventListener("scroll", () => {
   if (!ticking) {
     requestAnimationFrame(handleScroll);
@@ -27,5 +21,4 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-handleScroll();
+handleScroll(); 
