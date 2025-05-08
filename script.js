@@ -1,6 +1,6 @@
 const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 const intensity = isMobile ? 0.2 : 0.5;
-const maxTranslate = 100; // 각 요소가 최대 100px까지만 이동
+const maxTranslate = 50; 
 
 let ticking = false;
 

@@ -187,7 +187,7 @@ img[src$=".svg"] {
 
 .date {
   width: 90px;
-  top: 534px;
+  top: 554px;
   left: 108px;
 }
 
@@ -212,4 +212,11 @@ img[src$=".svg"] {
 
 body {
   overscroll-behavior-y: contain;
+}
+
+img[src$=".svg"] {
+  height: auto;
+  image-rendering: crisp-edges;
+  shape-rendering: geometricPrecision;
+  object-fit: unset;
 }
