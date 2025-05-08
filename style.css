@@ -12,6 +12,7 @@ body {
   font-family: 'Pretendard', sans-serif;
   background-color: #060807;
   color: #111;
+  overscroll-behavior: none;  
 }
 
 button:focus-visible {
@@ -216,11 +217,6 @@ img[src$=".svg"] {
   width: 251px;
   top: 0;
   left: 35px;
-}
-
-body {
-  overscroll-behavior-y: contain;  
- 
 }
 
 
