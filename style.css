@@ -33,15 +33,6 @@ a {
   height: auto;   
 }
 
-
-.overlap-wrapper {
-  background-color: #060807;
-  max-width: 402px;
-  width: 100%;
-  margin: 0 auto;
-  height: auto;
-}
-
 .overlap {
   position: relative;
   min-height: 120dvh;
