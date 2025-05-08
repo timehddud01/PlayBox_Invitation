@@ -34,7 +34,7 @@ a {
 
 .overlap {
   position: relative;
-  height: 120vh
+  min-height: 100dvh
 }
 
 .overlap-group {
@@ -81,7 +81,7 @@ img[src$=".svg"] {
 .ball {
   width: 66px;
   height: auto;
-  top: 377px;
+  top: 397px;
   left: 150px;
 }
 
@@ -173,13 +173,13 @@ img[src$=".svg"] {
 
 .play {
   width: 197px;
-  top: 112px;
+  top: 122px;
   left: 111px;
 }
 
 .box {
   width: 194px;
-  top: 424px;
+  top: 444px;
   left: 111px;
 }
 
