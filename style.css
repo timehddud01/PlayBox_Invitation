@@ -19,6 +19,7 @@ button:focus-visible {
   outline: -webkit-focus-ring-color auto 5px !important;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -33,7 +34,7 @@ a {
 
 .overlap {
   position: relative;
-  height: 964px;
+  height: 120vh
 }
 
 .overlap-group {
@@ -44,162 +45,167 @@ a {
   left: 0;
 }
 
-.ball {
-  position: absolute;
-  width: 66px;
-  height: 60px;
-  top: 407px;
-  left: 150px;
-  object-fit: cover;
+svg,
+img[src$=".svg"] {
+  image-rendering: auto;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  display: block;
 }
 
-.Head {
+
+.vector-image {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.ball,
+.img,
+.ball2,
+.pointer,
+.heart,
+.heart2,
+.controller,
+.HMD,
+.controller2,
+.spring,
+.spring2 {
   position: absolute;
-  width: 250px;
-  height: 43px;
-  top: 10px;
-  left: 41px;
-  z-index: 10;
+  object-fit: contain;
+}
+
+.ball {
+  width: 66px;
+  height: auto;
+  top: 377px;
+  left: 150px;
 }
 
 .img {
-  position: absolute;
   width: 37px;
-  height: 37px;
+  height: auto;
   top: 726px;
   left: 86px;
-  object-fit: cover;
 }
 
 .ball2 {
-  position: absolute;
   width: 49px;
-  height: 46px;
+  height: auto;
   top: 0;
   left: 329px;
-  object-fit: cover;
 }
 
 .pointer {
-  position: absolute;
   width: 101px;
-  height: 104px;
+  height: auto;
   top: 324px;
   left: 295px;
-  object-fit: cover;
 }
 
 .heart {
-  position: absolute;
   width: 97px;
-  height: 111px;
+  height: auto;
   top: 803px;
   left: 6px;
-  object-fit: cover;
 }
 
 .heart2 {
-  position: absolute;
   width: 95px;
-  height: 155px;
+  height: auto;
   top: 3px;
   left: 301px;
-  object-fit: cover;
 }
 
 .controller {
-  position: absolute;
   width: 67px;
-  height: 103px;
+  height: auto;
   top: 811px;
   left: 329px;
-  object-fit: cover;
-}
-
-.play {
-  position: absolute;
-  width: 197px;
-  height: 232px;
-  top: 142px;
-  left: 111px;
-}
-
-.box {
-  position: absolute;
-  width: 194px;
-  height: 217px;
-  top: 454px;
-  left: 111px;
 }
 
 .HMD {
-  position: absolute;
   width: 126px;
-  height: 228px;
+  height: auto;
   top: 588px;
   left: 270px;
-  object-fit: cover;
-}
-
-.date {
-  position: absolute;
-  width: 90px;
-  height: 111px;
-  top: 564px;
-  left: 108px;
-}
-
-.location {
-  position: absolute;
-  width: 270px;
-  height: 106px;
-  top: 792px;
-  left: 67px;
 }
 
 .controller2 {
-  position: absolute;
   width: 78px;
-  height: 130px;
+  height: auto;
   top: 216px;
   left: 0px;
-  object-fit: cover;
-}
-
-.div {
-  position: absolute;
-  width: 251px;
-  height: 99px;
-  top: 0;
-  left: 35px;
 }
 
 .spring {
-  position: absolute;
   width: 95px;
-  height: 99px;
+  height: auto;
   top: 0;
   left: 6px;
-  object-fit: cover;
 }
 
 .spring2 {
-  position: absolute;
   width: 67px;
-  height: 139px;
+  height: auto;
   top: 542px;
   left: 0px;
-  object-fit: cover;
 }
 
 .play,
 .box,
 .date,
 .location,
-.Head {
+.Head,
+.div {
+  position: absolute;
   object-fit: contain;
   object-position: center;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
+}
+
+
+
+.play {
+  width: 197px;
+  top: 112px;
+  left: 111px;
+}
+
+.box {
+  width: 194px;
+  top: 424px;
+  left: 111px;
+}
+
+
+
+.date {
+  width: 90px;
+  top: 534px;
+  left: 108px;
+}
+
+.location {
+  width: 270px;
+  top: 752px;
+  left: 67px;
+}
+
+.Head {
+  width: 250px;
+  top: 0%;
+  left: 41px;
+  z-index: 10;
+}
+
+.div {
+  width: 251px;
+  top: 0;
+  left: 35px;
 }
