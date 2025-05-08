@@ -30,11 +30,29 @@ a {
   width: 100%;
   margin: 0 auto;
   height: auto;
+
+
+  overflow-y: scroll;
+  scrollbar-width: none;          
+  -ms-overflow-style: none;       
+}
+
+.overlap-wrapper::-webkit-scrollbar {
+  display: none;                 
 }
 
 .overlap {
   position: relative;
-  min-height: 100dvh
+  min-height: 120dvh;
+
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.overlap::-webkit-scrollbar {
+  display: none;
 }
 
 .overlap-group {
@@ -211,14 +229,16 @@ img[src$=".svg"] {
 }
 
 body {
-  overscroll-behavior-y: contain;
+  overscroll-behavior-y: contain;  
   overflow-y: scroll;
-  scrollbar-width: none;          
-  -ms-overflow-style: none;       
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-body::-webkit-scrollbar {
-  display: none;                  
+body::-webkit-scrollbar,
+.overlap-wrapper::-webkit-scrollbar,
+.overlap::-webkit-scrollbar {
+  display: none;
 }
 
 img[src$=".svg"] {
