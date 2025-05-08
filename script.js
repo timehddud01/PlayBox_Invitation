@@ -1,5 +1,6 @@
 const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 const intensity = isMobile ? 0.2 : 0.5;
+const maxTranslate = 100; // 각 요소가 최대 100px까지만 이동
 
 let ticking = false;
 
@@ -7,7 +8,8 @@ function handleScroll() {
   const scrollY = window.scrollY;
 
   document.querySelectorAll(".parallax").forEach(el => {
-    el.style.transform = `translateY(${scrollY * intensity}px)`;
+    const translateY = Math.min(scrollY * intensity, maxTranslate);
+    el.style.transform = `translateY(${translateY}px)`;
   });
 
   ticking = false;

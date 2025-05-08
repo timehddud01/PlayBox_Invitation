@@ -209,3 +209,7 @@ img[src$=".svg"] {
   top: 0;
   left: 35px;
 }
+
+body {
+  overscroll-behavior-y: contain;
+}
