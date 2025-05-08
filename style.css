@@ -29,17 +29,9 @@ a {
   max-width: 402px;
   width: 100%;
   margin: 0 auto;
-  height: auto;
-
-
-  overflow-y: scroll;
-  scrollbar-width: none;          
-  -ms-overflow-style: none;       
+  height: auto;   
 }
 
-.overlap-wrapper::-webkit-scrollbar {
-  display: none;                 
-}
 
 .overlap-wrapper {
   background-color: #060807;
@@ -228,16 +220,9 @@ img[src$=".svg"] {
 
 body {
   overscroll-behavior-y: contain;  
-  overflow-y: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+ 
 }
 
-body::-webkit-scrollbar,
-.overlap-wrapper::-webkit-scrollbar,
-.overlap::-webkit-scrollbar {
-  display: none;
-}
 
 img[src$=".svg"] {
   height: auto;
