@@ -29,14 +29,14 @@ body {
   background-color: #060807;
 }
 
-/* 공통 스타일 */
+
 img {
   position: absolute;
   display: block;
   object-fit: contain;
 }
 
-/* 위치값 유지 */
+
 .pointer {
   width: 81px;
   height: 65px;
@@ -150,7 +150,7 @@ img {
   left: 120px;
 }
 
-/* parallax 효과 */
+
 .parallax {
   will-change: transform;
   transform: translateZ(0);
