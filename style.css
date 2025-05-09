@@ -1,224 +1,158 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 * {
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 html,
 body {
   margin: 0;
-  height: 100%;
+  padding: 0;
   font-family: 'Pretendard', sans-serif;
   background-color: #060807;
-  color: #111;
-  overscroll-behavior: none;  
+  color: white;
+  height: 100%;
 }
 
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
-}
-
-
-a {
-  text-decoration: none;
-}
-
-.overlap-wrapper {
+.invitation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   background-color: #060807;
-  max-width: 402px;
-  width: 100%;
-  margin: 0 auto;
-  height: auto;   
 }
 
-.overlap {
+.stage {
   position: relative;
-  min-height: 120dvh;
+  width: 402px;
+  height: 3150px;
+  background-color: #060807;
 }
-.overlap-group {
+
+/* 공통 스타일 */
+img {
   position: absolute;
-  width: 390px;
-  height: 914px;
-  top: 50px;
-  left: 0;
-}
-
-svg,
-img[src$=".svg"] {
-  image-rendering: auto;
-  shape-rendering: geometricPrecision;
-  text-rendering: geometricPrecision;
   display: block;
-}
-
-
-.vector-image {
-  object-fit: contain;
-  object-position: center;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-.ball,
-.img,
-.ball2,
-.pointer,
-.heart,
-.heart2,
-.controller,
-.HMD,
-.controller2,
-.spring,
-.spring2 {
-  position: absolute;
   object-fit: contain;
 }
 
-.ball {
-  width: 66px;
-  height: auto;
-  top: 397px;
-  left: 150px;
-}
-
-.img {
-  width: 37px;
-  height: auto;
-  top: 726px;
-  left: 86px;
-}
-
-.ball2 {
-  width: 49px;
-  height: auto;
-  top: 0;
-  left: 329px;
-}
-
+/* 위치값 유지 */
 .pointer {
-  width: 101px;
-  height: auto;
-  top: 324px;
-  left: 295px;
-}
-
-.heart {
-  width: 97px;
-  height: auto;
-  top: 803px;
-  left: 6px;
-}
-
-.heart2 {
-  width: 95px;
-  height: auto;
-  top: 3px;
-  left: 301px;
-}
-
-.controller {
-  width: 67px;
-  height: auto;
-  top: 811px;
-  left: 329px;
-}
-
-.HMD {
-  width: 126px;
-  height: auto;
-  top: 588px;
-  left: 270px;
-}
-
-.controller2 {
-  width: 78px;
-  height: auto;
-  top: 216px;
-  left: 0px;
+  width: 81px;
+  height: 65px;
+  top: 990px;
+  left: 321px;
 }
 
 .spring {
-  width: 95px;
-  height: auto;
-  top: 0;
-  left: 6px;
+  width: 99px;
+  height: 135px;
+  top: 780px;
+  left: 0;
 }
 
-.spring2 {
-  width: 67px;
-  height: auto;
-  top: 542px;
+.controller2 {
+  width: 51px;
+  height: 93px;
+  top: 800px;
+  left: 351px;
+}
+
+.ball {
+  width: 65px;
+  height: 60px;
+  top: 1300px;
+  left: 152px;
+}
+
+.controller {
+  width: 82px;
+  height: 113px;
+  top: 1100px;
+  left: 0;
+}
+
+.below_poster {
+  width: 402px;
+  height: 149px;
+  top: 800px;
   left: 0px;
 }
 
-.play,
-.box,
-.date,
-.location,
-.Head,
-.div {
+.introduction {
   position: absolute;
-  object-fit: contain;
-  object-position: center;
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 298px;
+  height: 402px;
+  top: 955px;
+  left: 52px;
 }
 
-
-
-.play {
-  width: 197px;
-  top: 122px;
-  left: 111px;
+.ball2 {
+  width: 30px;
+  height: 58px;
+  top: 1220px;
+  left: 372px;
 }
 
-.box {
-  width: 194px;
-  top: 444px;
-  left: 111px;
+.ball3 {
+  width: 37px;
+  height: 37px;
+  top: 1690px;
+  left: 106px;
 }
 
-
-
-.date {
-  width: 90px;
-  top: 554px;
-  left: 108px;
+.HMD {
+  width: 139px;
+  height: 208px;
+  top: 1470px;
+  left: 263px;
 }
 
-.location {
-  width: 270px;
-  top: 752px;
-  left: 67px;
+.spring2 {
+  width: 103px;
+  height: 157px;
+  top: 1420px;
+  left: 0;
 }
 
-.Head {
-  width: 250px;
-  top: 0%;
-  left: 41px;
-  z-index: 10;
+.info {
+  width: 288px;
+  height: 301px;
+  top: 1546px;
+  left: 57px;
 }
 
-.div {
-  width: 251px;
-  top: 0;
-  left: 35px;
+.poster {
+  width: 402px;
+  height: 637px;
+  top: 149px;
+  left: 0;
 }
 
-
-img[src$=".svg"] {
-  height: auto;
-  image-rendering: crisp-edges;
-  shape-rendering: geometricPrecision;
-  object-fit: unset;
+.head {
+  width: 153px;
+  height: 62px;
+  top: 73px;
+  left: 125px;
 }
 
+.subject {
+  width: 288px;
+  height: 911px;
+  top: 1985px;
+  left: 57px;
+}
+
+.SMU {
+  width: 163px;
+  height: 47px;
+  top: 3015px;
+  left: 120px;
+}
+
+/* parallax 효과 */
 .parallax {
   will-change: transform;
   transform: translateZ(0);
+  transition: transform 0.2s ease-out;
 }

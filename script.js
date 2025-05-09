@@ -1,7 +1,5 @@
-const intensity = 0.15;       
-const maxTranslate = 60;      
-
-let ticking = false;
+const intensity = 0.1;
+const maxTranslate = 180;
 
 function handleScroll() {
   const scrollY = window.scrollY;
@@ -10,15 +8,9 @@ function handleScroll() {
     const translateY = Math.min(scrollY * intensity, maxTranslate);
     el.style.transform = `translateY(${translateY}px)`;
   });
-
-  ticking = false;
 }
 
-window.addEventListener("scroll", () => {
-  if (!ticking) {
-    requestAnimationFrame(handleScroll);
-    ticking = true;
-  }
-});
+window.addEventListener("scroll", handleScroll);
+
 
 handleScroll(); 
