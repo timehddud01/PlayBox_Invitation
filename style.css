@@ -75,7 +75,7 @@ img {
 .below_poster {
   width: 402px;
   height: 149px;
-  top: 800px;
+  top: 790px;
   left: 0px;
 }
 
@@ -120,6 +120,13 @@ img {
   height: 301px;
   top: 1546px;
   left: 57px;
+}
+
+.poster_OG {
+  width: 402px;
+  height: 637px;
+  top: 168px;
+  left: 0;
 }
 
 .poster {
